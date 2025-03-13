@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Regular.eot');
+    src: url('../font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Montserrat-Regular.woff2') format('woff2'),
+        url('../font/Montserrat-Regular.ttf') format('truetype'),
+        url('../font/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hideme{opacity:0;}
+
+
+body{
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    background-color: black;
+
+}
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    height: 70px;
+    border-bottom: solid 2px white;
+}
+
+.menu-principal{background-color: white;}
+
+.navbar {
+    justify-content:space-around; 
+    padding: 0px; 
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+    border:solid 2px white;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/burger.png);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+}
+
+.navbar-collapse {
+    text-align: right;
+    background-color: black;
+    border-bottom: solid 2px white;
+    padding-right: 15px;
+}
+
+
+.navbar-toggler {
+    font-size: 1rem;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: white;
+}
+
+ul li a:hover{
+    font-weight: bold;
+}
+
+ul li:nth-child(5) a{
+    color: red !important;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+}
+
+h2{
+    border: solid 2px red;
+    font-size: 40px;
+    color: white;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.section1{
+    background-image: url(../images/moi-transparent.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    
+}
+
+.work-type{
+    padding: 20px;
+    text-align: center;
+}
+
+.work-type-title{
+    border-left: solid 15px red;
+}
+
+.work-type-title-no-index{
+    border-left: solid 15px red;
+}
+
+
+.text-intro{
+    padding-top: 150px;
+}
+
+.photo{
+    display: none;
+    margin-top: 50px;
+}
+
+.grey-bg{
+    background-color: lightgray;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.black-bg{
+    background-color: black;
+}
+
+.white-title{color: white;}
+
+#section-website{
+    background-color: white;
+}
+
+.flex-direction-nav a:before {
+    font-family: 'flexslider-icon';
+    font-size: 30px;
+    display: inline-block;
+    content: '\f001';
+    color: white;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.flexslider {
+    border: 0px solid #fff;
+}
+
+.width-100{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.footer{
+    background-color: black;
+}
+
+.footer p{
+    font-size: 12px;
+    color: lightgray;
+}
+
+i{
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.call{
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo{display:none;}
+
+.fa-phone-volume{
+    font-size: 50px;
+}
+
+.max-1200{
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.flex-control-nav {
+    bottom: 10px;
+}
+
+.flex-control-paging li a {
+    border: solid 1px white;
+}
+
+
+.flex-control-paging li a.flex-active {
+    background: white;
+}
+
+.flexslider {
+    margin: 0px;
+}
+
+.slide-gusto{
+    background: url(../images/slide-gusto.jpg);
+    background-size: cover;
+}
+
+.miniature-emailing{
+    border: solid 1px white;
+}
+
+.space-header-fixed{
+    margin-top: 100px;
+}
+
+
+.items-center{justify-content: center;}
+
+#mini {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    padding-inline-start: 0px;
+    justify-content: space-around;
+}
+
+#mini li{list-style: none;}
+
+
+.mini-logo{
+    border: solid 1px white;
+}
+
+h4{
+    border: solid 1px red;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+i{
+    font-size: 20px;
+}
+
+.resume{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.resume:hover{
+    color: white;
+}
+
+/****************************************************************************************************MEDIA QUERIES*********************************************************************************************/
+
+@media screen and (min-width:768px){
+    .section1{background-image: url(../images/moi-transparent-ipad.png);}
+    .logo-small{display: none;}
+    .logo{display:block; }
+    .header{height: 100px;}
+    #burger{margin-top: 20px;}
+    .call-button{display: none;}
+
+
+}
+
+@media screen and (min-width:992px){
+    .photo{display: block;}
+    .section1{background-image:url(../images/transparent.png);}
+    #navbarSupportedContent{height: 100px;}
+    .navbar-light .navbar-nav .nav-link {font-size:16px;}
+    .work-type-title h3{font-size: 70px; margin-top: 20%;}
+    .work-type-title-no-index h3{font-size: 70px; margin-top: 0%;}
+    .work-type{align-content: center;}
+
+
+    #work{font-size:  30px;}
+
+
+}
