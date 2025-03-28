@@ -120,14 +120,10 @@ h3{
     border-left: solid 15px red;
 }
 
-
-.text-intro{
-    padding-top: 150px;
-}
-
 .photo{
-    display: none;
     margin-top: 50px;
+    width: 200px;
+    margin: 0 auto;
 }
 
 .grey-bg{
@@ -272,10 +268,6 @@ i{
     color: white;
 }
 
-.photo{
-width: 300px;
-margin: 0 auto;
-}
 
 .stack{
 width: 50px;
@@ -302,21 +294,30 @@ form{
 margin: 0 auto;
 width: 50%
 }
+
+.text-intro{
+  padding-top: 50px;
+}
 /****************************************************************************************************MEDIA QUERIES*********************************************************************************************/
 
 @media screen and (min-width:768px){
-    .section1{background-image: url(../images/moi-transparent-ipad.png);}
     .logo-small{display: none;}
     .logo{display:block; }
     .header{height: 100px;}
     #burger{margin-top: 20px;}
     .call-button{display: none;}
+    .photo{
+      width: 300px;
+  }
 
 
 }
 
 @media screen and (min-width:992px){
-    .photo{display: block;}
+  .text-intro{
+    padding-top: 150px;
+}
+
     .section1{background-image:url(../images/transparent.png);}
     #navbarSupportedContent{height: 100px;}
     .navbar-light .navbar-nav .nav-link {font-size:16px;}
