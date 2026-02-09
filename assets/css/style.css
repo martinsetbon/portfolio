@@ -37,6 +37,19 @@ body{
     padding: 0px;
 }
 
+.language-switcher {
+    margin-right: 12px;
+}
+
+.language-switcher .lang-toggle {
+    border-color: white;
+    color: white;
+}
+
+.language-switcher .lang-toggle i {
+    color: white;
+}
+
 .navbar-light .navbar-toggler {
     color: white;
     border:solid 2px white;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="initial-scale=1.0 width=device-width">
@@ -30,30 +30,32 @@
                         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto ml-auto">
                                 <li class="nav-item ">
-                                    <a id="navbar6" class="nav-link" href="#section1"  role="button" aria-haspopup="true" aria-expanded="false">
-                                        Infos
-                                    </a>
+                                    <a id="navbar6" class="nav-link" href="#section1"  role="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav_infos">Infos</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a id="navbar6" class="nav-link" href="#row-apps"  role="button" aria-haspopup="true" aria-expanded="false">
-                                        Apps
-                                    </a>
+                                    <a id="navbar6" class="nav-link" href="#row-apps"  role="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav_apps">Apps</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a id="navbar6" class="nav-link" href="#row-websites"  role="button" aria-haspopup="true" aria-expanded="false">
-                                        Websites
-                                    </a>
+                                    <a id="navbar6" class="nav-link" href="#row-websites"  role="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav_websites">Websites</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a id="navbar6" class="nav-link" href="#contacts"  role="button" aria-haspopup="true" aria-expanded="false">
-                                        Contacts
-                                    </a>
+                                    <a id="navbar6" class="nav-link" href="#contacts"  role="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav_contacts">Contacts</a>
                                 </li>
                                 <!-- <li class="nav-item ">
                                     <a id="navbar6 japanese" class="nav-link" href="index-japanese.html"  role="button" aria-haspopup="true" aria-expanded="false">
                                         日本語
                                     </a>
                                 </li> -->
+                            </ul>
+                        </div>
+                        <div class="language-switcher dropdown ms-lg-3">
+                            <button class="btn btn-outline-light btn-sm dropdown-toggle lang-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">
+                                <i class="fa-solid fa-globe"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item lang-option active" type="button" data-lang="en">English</button></li>
+                                <li><button class="dropdown-item lang-option" type="button" data-lang="fr">Français</button></li>
+                                <li><button class="dropdown-item lang-option" type="button" data-lang="ja">日本語</button></li>
                             </ul>
                         </div>
                     </nav>
@@ -68,17 +70,24 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="text-intro text-justify">
-                        <h1>Hi, I'm Martin.</h1>
-                        <p>
-                          Full Stack developer based in Tokyo on a <strong>working visa.</strong>
+                        <h1 data-i18n="intro_title">Hi, I'm Martin.</h1>
+                        <p data-i18n-html="intro_body">
+                          Full Stack developer/ designer from France.
                           <br>
-                          I lived in <strong>3 different countries</strong>,  and have more than <strong>2 years experience in IT and tech related work.</strong>
+                          I lived in <strong>3 different countries</strong>, and have <strong>3 years experience in IT and tech related work.</strong>
                           <br>
-                          My skills go from front end - <strong>HTML / CSS, React / Stimulus to back end - PostgreSQL, Ruby on rails.</strong> <br>
-                          <br>
-                            <a href="assets/cv-developer.pdf" class="resume" target="_blank">See my resume <i class="fa-regular fa-file text-white"></i></a></p>
-                            <a href="assets/CV- developer-japanese.pdf" class="resume" target="_blank">履歴書 <i class="fa-regular fa-file text-white"></i></a></p>
-                            <p>Find me here too :  <a href="https://www.linkedin.com/in/martin-setbon-89a9a3150" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a> <a href="https://github.com/martinsetbon" target="_blank"><i class="fa-brands fa-github text-white"></i></a></p>
+                          My skills go from front end - <strong>HTML / CSS, React / Stimulus</strong> to back end - <strong>PostgreSQL, Ruby on Rails.</strong>
+                        </p>
+                        <div class="d-flex flex-column gap-2">
+                            <a href="assets/cv-developer.pdf" class="resume" data-resume-lang="en" target="_blank"><span data-i18n="resume_en">See my resume</span> <i class="fa-regular fa-file text-white"></i></a>
+                            <a href="assets/cv-developer-japanese.pdf" class="resume" data-resume-lang="ja" target="_blank"><span data-i18n="resume_jp">履歴書</span> <i class="fa-regular fa-file text-white"></i></a>
+                            <a href="assets/cv-developer-francais.pdf" class="resume" data-resume-lang="fr" target="_blank"><span data-i18n="resume_fr">Mon CV</span> <i class="fa-regular fa-file text-white"></i></a>
+                        </div>
+                        <p class="mt-3">
+                            <span data-i18n="find_me">Find me here too :</span>
+                            <a href="https://www.linkedin.com/in/martin-setbon-89a9a3150" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a>
+                            <a href="https://github.com/martinsetbon" target="_blank"><i class="fa-brands fa-github text-white"></i></a>
+                        </p>
                     </div>
                     <div class="tech-stack d-flex justify-content-start align-items-center flex-wrap">
                       <img class="img-fluid htmlcss" src="assets/images/htmlcss.png" alt="html-css icon">
@@ -97,7 +106,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center pt-4 pb-4">
-                    <h2>WORKS</h2>
+                    <h2 data-i18n="works_title">WORKS</h2>
                 </div>
             </div>
         </div>
@@ -106,7 +115,7 @@
           <div id="row-apps">
               <div class="col-12 work-type">
                   <div>
-                      <h3 class="work-type-title white-title" id="work">APPS</h3>
+                      <h3 class="work-type-title white-title" id="work" data-i18n="apps_title">APPS</h3>
                   </div>
               </div>
           </div>
@@ -118,9 +127,33 @@
               <img src="assets/images/mockup-whatdoiwear.jpg" class="card-img-top mockup" alt="...">
               <div class="card-body">
                 <h5 class="card-title">What do I wear ?</h5>
-                <p class="card-text card-text">Rails App that allows you to upload or take a picture, and then uses AI to find the same clothes as the ones in the pictures.</p>
-                <p class="card-text card-text"><small class="text-body-secondary">Tech used : Rails - HTML/CSS - Javascript - PostgreSQL</small></p>
-                <a href="https://github.com/martinsetbon/what-do-i-wear" target="_blank"><p class="card-text card-text"><small class="text-body-secondary"><i class="fa-brands fa-github"></i> check the code ></small></p></a>
+                <p class="card-text card-text" data-i18n="app1_desc">Rails App that allows you to upload or take a picture, and then uses AI to find the same clothes as the ones in the pictures.</p>
+                <p class="card-text card-text"><small class="text-body-secondary"><span data-i18n="tech_used">Tech used :</span> Rails - HTML/CSS - Javascript - PostgreSQL</small></p>
+                <a href="https://github.com/martinsetbon/what-do-i-wear" target="_blank"><p class="card-text card-text"><small class="text-body-secondary"><i class="fa-brands fa-github"></i> <span data-i18n="check_code">check the code ></span></small></p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 width-100 bg-red p-4">
+            <div class="card mb-3">
+              <img src="assets/images/mockup-games-project-manager.jpg" class="card-img-top mockup" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Games project manager</h5>
+                <p class="card-text" data-i18n="app2b_desc">Rails app to create and manage schedules for video games productions. </p>
+                <p class="card-text"><small class="text-body-secondary"><span data-i18n="tech_used">Tech used :</span> Rails - HTML/CSS - Javascript - PostgreSQL (Cursor AI)</small></p>
+                <a href="https://github.com/martinsetbon/game_project_manager" target="_blank"><p class="card-text card-text"><small class="text-body-secondary"><i class="fa-brands fa-github"></i> <span data-i18n="check_code">check the code ></span></small></p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 width-100 bg-red p-4">
+            <div class="card mb-3">
+              <img src="assets/images/mockup-daijobmap.jpg" class="card-img-top mockup" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">DaijobMap</h5>
+                <p class="card-text" data-i18n="app2c_desc">Company project: web app that connects jobseekers and recruiters with geolocation. (in production)</p>
+                <p class="card-text"><small class="text-body-secondary"><span data-i18n="tech_used">Tech used :</span> PHP / Laravel - HTML/CSS - Javascript - PostgreSQL</small></p>
+                <a href="https://dai-job.work" target="_blank"><p class="card-text card-text"><small class="text-body-secondary"><i class="fa-solid fa-display"></i> <span data-i18n="check_site">check the website ></span></small></p></a>
               </div>
             </div>
           </div>
@@ -130,9 +163,9 @@
               <img src="assets/images/mockup-camera-buddy.jpg" class="card-img-top mockup" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Camera buddy</h5>
-                <p class="card-text">Rails App, clone of Airbnb but with Camera renting function, where you can rent cameras from other users or rent out your own.</p>
-                <p class="card-text"><small class="text-body-secondary">Tech used : Rails - HTML/CSS - Javascript - PostgreSQL</small></p>
-                <a href="https://github.com/martinsetbon/camera_buddy" target="_blank"><p class="card-text card-text"><small class="text-body-secondary"><i class="fa-brands fa-github"></i> check the code ></small></p></a>
+                <p class="card-text" data-i18n="app2_desc">Rails App, clone of Airbnb but with Camera renting function, where you can rent cameras from other users or rent out your own.</p>
+                <p class="card-text"><small class="text-body-secondary"><span data-i18n="tech_used">Tech used :</span> Rails - HTML/CSS - Javascript - PostgreSQL</small></p>
+                <a href="https://github.com/martinsetbon/camera_buddy" target="_blank"><p class="card-text card-text"><small class="text-body-secondary"><i class="fa-brands fa-github"></i> <span data-i18n="check_code">check the code ></span></small></p></a>
               </div>
             </div>
           </div>
@@ -143,10 +176,9 @@
               <img src="assets/images/mockup-cafe-api.jpg" class="card-img-top mockup" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Cafe Api</h5>
-                <p class="card-text">React App that uses an API to find coffe shops around Tokyo. <br>
-                API created with Ruby on Rails</p>
-                <p class="card-text"><small class="text-body-secondary">Tech used : Rails - React</small></p>
-                <a href="https://github.com/martinsetbon/react-workshop" target="_blank"><p class="card-text card-text"><small class="text-body-secondary"><i class="fa-brands fa-github"></i> check the code ></small></p></a>
+                <p class="card-text" data-i18n="app3_desc">React App that uses an API to find coffee shops around Tokyo. API created with Ruby on Rails</p>
+                <p class="card-text"><small class="text-body-secondary"><span data-i18n="tech_used">Tech used :</span> Rails - React</small></p>
+                <a href="https://github.com/martinsetbon/react-workshop" target="_blank"><p class="card-text card-text"><small class="text-body-secondary"><i class="fa-brands fa-github"></i> <span data-i18n="check_code">check the code ></span></small></p></a>
               </div>
             </div>
           </div>
@@ -156,11 +188,9 @@
               <img src="assets/images/herocard_mockup.jpg" class="card-img-top mockup" alt="...">
               <div class="card-body">
                 <h5 class="card-title">React Card app</h5>
-                <p class="card-text">A fake boardgame character card created with React. <br>
-                  Only react components and functions are used.
-                </p>
-                <p class="card-text"><small class="text-body-secondary">Tech used : React</small></p>
-                <a href="https://github.com/martinsetbon/herocard" target="_blank"><p class="card-text card-text"><small class="text-body-secondary"><i class="fa-brands fa-github"></i> check the code ></small></p></a>
+                <p class="card-text" data-i18n="app4_desc">A fake boardgame character card created with React. Only react components and functions are used.</p>
+                <p class="card-text"><small class="text-body-secondary"><span data-i18n="tech_used">Tech used :</span> React</small></p>
+                <a href="https://github.com/martinsetbon/herocard" target="_blank"><p class="card-text card-text"><small class="text-body-secondary"><i class="fa-brands fa-github"></i> <span data-i18n="check_code">check the code ></span></small></p></a>
               </div>
             </div>
           </div>
@@ -174,7 +204,7 @@
             <div id="row-websites">
                 <div class="col-12 work-type">
                     <div>
-                        <h3 class="work-type-title white-title" id="work">WEBSITE</h3>
+                        <h3 class="work-type-title white-title" id="work" data-i18n="websites_title">WEBSITE</h3>
                     </div>
                 </div>
             </div>
@@ -188,6 +218,7 @@
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -199,6 +230,9 @@
                       <div class="carousel-item">
                        <a href="https://martinsetbon.github.io/gustocoffe/index.html" target="_blank"> <img src="assets/images/slide-gusto2.jpg" class="d-block w-100" alt="..."></a>
                       </div>
+                      <div class="carousel-item">
+                        <a href="https://martinsetbon.github.io/love_pako/" target="_blank"> <img src="assets/images/slide-lovepako.jpg" class="d-block w-100" alt="..."></a>
+                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -214,20 +248,20 @@
         </div>
 
 
-              <p class="text-center mt-5" id="contacts">Contact me by Email</p>
+              <p class="text-center mt-5" id="contacts" data-i18n="contact_title">Contact me by Email</p>
           <div class="text-left mt-3 mb-5">
             <form id="contact-form" action="https://formspree.io/f/mqapalrb" method="POST">
               <div class="mb-3">
-                <label for="email" class="form-label text-white">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" required placeholder="name@example.com">
+                <label for="email" class="form-label text-white" data-i18n="contact_email_label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="name@example.com" data-i18n-placeholder="contact_email_placeholder">
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label text-white">Your message</label>
-                <textarea class="form-control" id="message" name="message" rows="3" required placeholder="Type your message here"></textarea>
+                <label for="message" class="form-label text-white" data-i18n="contact_message_label">Your message</label>
+                <textarea class="form-control" id="message" name="message" rows="3" required placeholder="Type your message here" data-i18n-placeholder="contact_message_placeholder"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary" data-i18n="contact_submit">Submit</button>
             </form>
-            <p id="success-message" style="display: none; color: green;" class="text-center">Your message has been sent successfully!</p>
+            <p id="success-message" style="display: none; color: green;" class="text-center" data-i18n="contact_success">Your message has been sent successfully!</p>
 
           </div>
 
@@ -235,7 +269,7 @@
             <div class="container footer">
                 <div class="row text-center">
                     <div class="col-12 pt-4">
-                        <p>Created by Martin Setbon</p>
+                        <p data-i18n="footer_created">Created by Martin Setbon</p>
                         <hr>
                     </div>
                 </div>
@@ -252,8 +286,163 @@
     </body>
 
     <script>
+      const translations = {
+        en: {
+          page_title: "Martin Setbon Portfolio",
+          nav_infos: "Infos",
+          nav_apps: "Apps",
+          nav_websites: "Websites",
+          nav_contacts: "Contacts",
+          intro_title: "Hi, I'm Martin.",
+          intro_body: "Full Stack developer/ traveler from France.<br>I lived in <strong>3 different countries</strong>, and have <strong>3 years experience in IT and tech related work.</strong><br>My skills go from front end - <strong>HTML / CSS, React / Stimulus</strong> to back end - <strong>PostgreSQL, Ruby on Rails.</strong>",
+          resume_en: "See my resume",
+          resume_jp: "Japanese resume",
+          resume_fr: "French resume",
+          find_me: "Find me here too :",
+          works_title: "WORKS",
+          apps_title: "APPS",
+          websites_title: "WEBSITE",
+          app1_desc: "Rails App that allows you to upload or take a picture, and then uses AI to find the same clothes as the ones in the pictures.",
+          app2b_desc: "Rails app to create and manage schedules for video game productions.",
+          app2c_desc: "Company project: web app that connects jobseekers and recruiters with geolocation. (in production)",
+          app2_desc: "Rails App, clone of Airbnb but with Camera renting function, where you can rent cameras from other users or rent out your own.",
+          app3_desc: "React App that uses an API to find coffee shops around Tokyo. API created with Ruby on Rails",
+          app4_desc: "A fake boardgame character card created with React. Only react components and functions are used.",
+          tech_used: "Tech used :",
+          check_code: "check the code >",
+          check_site: "check the website >",
+          contact_title: "Contact me by Email",
+          contact_email_label: "Email address",
+          contact_email_placeholder: "name@example.com",
+          contact_message_label: "Your message",
+          contact_message_placeholder: "Type your message here",
+          contact_submit: "Submit",
+          contact_success: "Your message has been sent successfully!",
+          footer_created: "Created by Martin Setbon",
+          alert_send_problem: "There was a problem sending your message. Please try again.",
+          alert_send_error: "There was an error. Please try again."
+        },
+        fr: {
+          page_title: "Portfolio de Martin Setbon",
+          nav_infos: "Infos",
+          nav_apps: "Applis",
+          nav_websites: "Sites web",
+          nav_contacts: "Contacts",
+          intro_title: "Martin Setbon",
+          intro_body: "Développeur full-stack / voyageur originaire de France.<br>J'ai vécu dans <strong>3 pays différents</strong> et j'ai <strong>3 ans d'expérience dans l'IT et les métiers tech.</strong><br>Mes compétences vont du front-end — <strong>HTML / CSS, React / Stimulus</strong> — au back-end — <strong>PostgreSQL, Ruby on Rails.</strong>",
+          resume_en: "Voir mon CV",
+          resume_jp: "CV japonais",
+          resume_fr: "Mon CV",
+          find_me: "Retrouvez-moi aussi ici :",
+          works_title: "RÉALISATIONS",
+          apps_title: "APPLIS",
+          websites_title: "SITES WEB",
+          app1_desc: "Application Rails qui permet de télécharger ou prendre une photo, puis utilise l'IA pour retrouver les mêmes vêtements que sur les images.",
+          app2b_desc: "Application Rails pour créer et gérer des plannings de production de jeux vidéo.",
+          app2c_desc: "Projet en entreprise : webapp qui relie candidats et recruteurs grâce à la géolocalisation. (en production)",
+          app2_desc: "Application Rails, clone d'Airbnb avec une fonction de location d'appareils photo, où vous pouvez louer des appareils d'autres utilisateurs ou louer les vôtres.",
+          app3_desc: "Application React qui utilise une API pour trouver des cafés autour de Tokyo. API créée avec Ruby on Rails",
+          app4_desc: "Une fausse carte de personnage de jeu de plateau créée avec React. Seuls des composants et fonctions React sont utilisés.",
+          tech_used: "Technos utilisées :",
+          check_code: "voir le code >",
+          check_site: "voir le site >",
+          contact_title: "Contactez-moi par e-mail",
+          contact_email_label: "Adresse e-mail",
+          contact_email_placeholder: "nom@exemple.com",
+          contact_message_label: "Votre message",
+          contact_message_placeholder: "Écrivez votre message ici",
+          contact_submit: "Envoyer",
+          contact_success: "Votre message a bien été envoyé !",
+          footer_created: "Créé par Martin Setbon",
+          alert_send_problem: "Un problème est survenu lors de l'envoi. Veuillez réessayer.",
+          alert_send_error: "Une erreur est survenue. Veuillez réessayer."
+        },
+        ja: {
+          page_title: "Martin Setbon ポートフォリオ",
+          nav_infos: "情報",
+          nav_apps: "アプリ",
+          nav_websites: "ウェブサイト",
+          nav_contacts: "連絡先",
+          intro_title: "こんにちは、Martinです。",
+          intro_body: "フランス出身のフルスタック開発者／旅人です。<br>これまでに<strong>3か国</strong>で暮らし、IT/テック関連で<strong>3年</strong>の経験があります。<br>スキルはフロントエンド（<strong>HTML / CSS、React / Stimulus</strong>）からバックエンド（<strong>PostgreSQL、Ruby on Rails</strong>）まで対応します。",
+          resume_en: "英語の履歴書",
+          resume_jp: "履歴書",
+          resume_fr: "フランス語の履歴書",
+          find_me: "こちらでも見つけられます：",
+          works_title: "制作物",
+          apps_title: "アプリ",
+          websites_title: "ウェブサイト",
+          app1_desc: "写真をアップロードまたは撮影し、AIで同じ服を探すRailsアプリです。",
+          app2b_desc: "ゲーム制作のスケジュールを作成・管理するRailsアプリ。",
+          app2c_desc: "企業プロジェクト：位置情報で求職者と採用担当をつなぐWebアプリ。（運用中）",
+          app2_desc: "Airbnbのクローンにカメラレンタル機能を追加したRailsアプリ。ほかのユーザーのカメラを借りたり、自分のカメラを貸し出せます。",
+          app3_desc: "東京周辺のカフェを探せるAPI連携のReactアプリ。APIはRuby on Railsで作成。",
+          app4_desc: "Reactで作った架空のボードゲームキャラクターカード。Reactのコンポーネントと関数のみ使用。",
+          tech_used: "使用技術：",
+          check_code: "コードを見る >",
+          check_site: "サイトを見る >",
+          contact_title: "メールで連絡",
+          contact_email_label: "メールアドレス",
+          contact_email_placeholder: "name@example.com",
+          contact_message_label: "メッセージ",
+          contact_message_placeholder: "こちらにメッセージを入力",
+          contact_submit: "送信",
+          contact_success: "メッセージが送信されました！",
+          footer_created: "Martin Setbon 作成",
+          alert_send_problem: "送信中に問題が発生しました。もう一度お試しください。",
+          alert_send_error: "エラーが発生しました。もう一度お試しください。"
+        }
+      };
+
+      let currentLang = "en";
+
+      const applyTranslations = (lang) => {
+        const dict = translations[lang] || translations.en;
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        if (dict.page_title) {
+          document.title = dict.page_title;
+        }
+
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key]) {
+            el.textContent = dict[key];
+          }
+        });
+
+        document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+          const key = el.getAttribute("data-i18n-html");
+          if (dict[key]) {
+            el.innerHTML = dict[key];
+          }
+        });
+
+        document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+          const key = el.getAttribute("data-i18n-placeholder");
+          if (dict[key]) {
+            el.setAttribute("placeholder", dict[key]);
+          }
+        });
+
+      document.querySelectorAll("[data-resume-lang]").forEach((el) => {
+        const resumeLang = el.getAttribute("data-resume-lang");
+        el.style.display = resumeLang === lang ? "" : "none";
+      });
+
+        document.querySelectorAll(".lang-option").forEach((btn) => {
+          btn.classList.toggle("active", btn.dataset.lang === lang);
+        });
+      };
+
+      document.querySelectorAll(".lang-option").forEach((btn) => {
+        btn.addEventListener("click", () => applyTranslations(btn.dataset.lang));
+      });
+
+      applyTranslations(currentLang);
+
       document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault();
 
         const form = event.target;
         const formData = new FormData(form);
@@ -267,12 +456,12 @@
         }).then(response => {
           if (response.ok) {
             document.getElementById("success-message").style.display = "block";
-            form.reset(); // Reset the form fields
+            form.reset();
           } else {
-            alert("There was a problem sending your message. Please try again.");
+            alert(translations[currentLang].alert_send_problem);
           }
-        }).catch(error => {
-          alert("There was an error. Please try again.");
+        }).catch(() => {
+          alert(translations[currentLang].alert_send_error);
         });
       });
       </script>
