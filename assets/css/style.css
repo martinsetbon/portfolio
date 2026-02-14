@@ -367,6 +367,14 @@ width: 50%
   object-fit: contain;
 }
 
+.graphic-lightbox-caption {
+  font-size: 1rem;
+}
+
+.modal-backdrop.show {
+  opacity: 0.9 !important;
+}
+
 .screenshot-carousel-scroll {
   display: flex;
   gap: 0.5rem;
@@ -374,9 +382,17 @@ width: 50%
   overflow-y: hidden;
   padding: 1rem;
   max-height: 90vh;
-  align-items: center;
+  align-items: flex-start;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+}
+
+.screenshot-carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
 }
 
 .screenshot-carousel-scroll img {
@@ -384,6 +400,4 @@ width: 50%
   width: auto;
   max-width: 45vw;
   object-fit: contain;
-  flex-shrink: 0;
-  scroll-snap-align: center;
 }
